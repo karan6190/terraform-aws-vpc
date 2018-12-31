@@ -1,14 +1,21 @@
-variable "AWS_ACCESS_KEY" {}
-variable "AWS_SECRET_KEY" {}
+variable "AWS_ACCESS_KEY" {
+  description = "Programmatic AWS Access Key of Desired AWS Account"
+}
+variable "AWS_SECRET_KEY" {
+  description = "Programmatic AWS Secret Key of Desired AWS Account"
+}
 
 variable "AWS_REGION" {
+  description = "Region where you have to Provision Infrastructure"
   default = "us-east-2"
 }
 
 variable "VPC_NAME" {
+  description = "Product Name"
   default = "Demo-prod"
 }
 
 variable "ENV" {
+  description = "Type of Environment like Prod, Dev, Staging"
   default = "prod"
 }
