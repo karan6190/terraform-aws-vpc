@@ -17,7 +17,7 @@ By default this modules creates the **VPC** with **two public subnets** and **tw
 ```hcl
 
 module "main-vpc" {
-  source     = "karan6190/terraform-aws-infra/modules/vpc"
+  source     = "https://github.com/karan6190/terraform-aws-infra/tree/master/modules/vpc"
   ENV        = "${var.ENV}"                  #productEnv
   AWS_REGION = "${var.AWS_REGION}"
   VPC_NAME   = "${var.VPC_NAME}"             #productID
@@ -33,7 +33,7 @@ By default Bastion host is launched with attached **Administrative access policy
 
 ```hcl
 module "bastion" {
-  source         = "karan6190/terraform-aws-infra/modules/bastion"
+  source         = "https://github.com/karan6190/terraform-aws-infra/tree/master/modules/bastion"
   ENV            = "${var.ENV}"
   AWS_REGION     = "${var.AWS_REGION}"
   VPC_NAME       = "${var.VPC_NAME}"                     #productID
@@ -46,8 +46,8 @@ module "bastion" {
 
 ## Examples
 
-* [Infrastructure for dev Environment](https://github.com/karan6190/terraform-aws-infra/examples/infra-dev)
-* [Infrastructure for prod Environment](https://github.com/karan6190/terraform-aws-infra/examples/infra-prod)
+* [Infrastructure for dev Environment](https://github.com/karan6190/terraform-aws-infra/tree/master/examples/infra-dev)
+* [Infrastructure for prod Environment](https://github.com/karan6190/terraform-aws-infra/tree/master/examples/infra-prod)
 
 ## Inputs
 
