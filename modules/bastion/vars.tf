@@ -27,3 +27,7 @@ variable "VPC_NAME" {
 variable "pubkey" {
   description = "Public key to be associated with bastion host"
 }
+
+variable "keyname" {
+  description = "Name of the public key"
+}

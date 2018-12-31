@@ -18,5 +18,6 @@ module "bastion" {
   VPC_NAME       = "${var.VPC_NAME}"                     #productID
   vpc_id         = "${module.main-vpc.vpc_id}"           #productVPC
   public_subnets = "${module.main-vpc.public_subnets-1}"
+  keyname        = "bastion-key"                         #Key Name
   pubkey         = "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxx"     #public key
 }

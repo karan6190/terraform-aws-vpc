@@ -39,6 +39,7 @@ module "bastion" {
   VPC_NAME       = "${var.VPC_NAME}"                     #productID
   vpc_id         = "${module.main-vpc.vpc_id}"           #productVPC
   public_subnets = "${module.main-vpc.public_subnets-1}"
+  keyname        = "bastion-key"                         #Key name
   pubkey         = "ssh-rsa xxxxxxxxxxxxxxxxxxxxxxx"     #public key
 }
 
@@ -66,11 +67,6 @@ module "bastion" {
 | public_subnets-2 | ID of public subnet 2 |
 | private_subnets-1 | ID of private subnet 1 |
 | private_subnets-2 | ID of private subnet 2 |
-
-## Architecture
-
-![terraform-aws-infra](https://github.com/karan6190/terraform-aws-infra/blob/master/docs/terraform-aws-infra.JPG)
-
 
 ## Authors
 
