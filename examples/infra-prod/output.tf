@@ -6,21 +6,21 @@ output "vpc_id" {
 }
 
 output "public_subnets-1" {
-  value = "${module.main-vpc.public_subnets-1}"
+  value       = "${module.main-vpc.public_subnets-1}"
   description = "ID of Public subnet 1"
 }
 
 output "public_subnets-2" {
-  value = "${module.main-vpc.public_subnets-2}"
+  value       = "${module.main-vpc.public_subnets-2}"
   description = "ID of Public subnet 2"
 }
 
 output "private_subnets-1" {
-  value = "${module.main-vpc.private_subnets-1}"
+  value       = "${module.main-vpc.private_subnets-1}"
   description = "ID of Private subnet 1"
 }
 
 output "private_subnets-2" {
-  value = "${module.main-vpc.private_subnets-2}"
+  value       = "${module.main-vpc.private_subnets-2}"
   description = "ID of Private subnet 2"
 }

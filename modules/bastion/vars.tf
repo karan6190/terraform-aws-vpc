@@ -1,6 +1,6 @@
 variable "AWS_REGION" {
   description = "Region where you have to Provision Infrastructure"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "AMIS" {
@@ -17,13 +17,14 @@ variable "AMIS" {
 variable vpc_id {
   description = "Designed VPC ID"
 }
+
 variable public_subnets {
   description = "ID of Public subnet"
 }
 
 variable "ENV" {
   description = "Type of Environment like Prod, Dev, Staging"
-  default = "dev"
+  default     = "dev"
 }
 
 variable "VPC_NAME" {

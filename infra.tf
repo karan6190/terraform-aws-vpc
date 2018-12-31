@@ -4,9 +4,9 @@
 
 module "main-vpc" {
   source     = "/modules/vpc"
-  ENV        = "${var.ENV}"                  #productEnv
+  ENV        = "${var.ENV}"         #productEnv
   AWS_REGION = "${var.AWS_REGION}"
-  VPC_NAME   = "${var.VPC_NAME}"             #productID
+  VPC_NAME   = "${var.VPC_NAME}"    #productID
   az1        = "${var.AWS_REGION}a"
   az2        = "${var.AWS_REGION}b"
 }
