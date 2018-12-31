@@ -69,7 +69,7 @@ module "bastion" {
 
 ## Architecture
 
-![terraform-aws-infra](https://github.com/karan6190/terraform-aws-infra/blob/v1.0.2/docs/terraform-aws-infra.JPG)
+![terraform-aws-infra](https://github.com/karan6190/terraform-aws-infra/blob/master/docs/terraform-aws-infra.JPG)
 
 
 ## Authors
