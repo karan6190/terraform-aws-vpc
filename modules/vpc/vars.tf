@@ -1,17 +1,24 @@
 variable "ENV" {
+  description = "Type of Environment like Prod, Dev, Staging"
   default = "dev"
 }
 
 variable "AWS_REGION" {
-  default = "us-east-1"
+  description = "Region where you have to Provision Infrastructure"
+  default = "us-east-2"
 }
 
-variable "VPC_NAME" {}
+variable "VPC_NAME" {
+  description = "Product Name"
+}
 
 variable "az1" {
-  description = "availability zone 1"
+  description = "Availability zone 1"
+  default = "us-east-2a"
+  
 }
 
 variable "az2" {
-  description = "availability zone 2"
+  description = "Availability zone 2"
+  default = "us-east-2b"
 }
