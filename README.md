@@ -67,6 +67,11 @@ module "bastion" {
 | private_subnets-1 | ID of private subnet 1 |
 | private_subnets-2 | ID of private subnet 2 |
 
+## Architecture
+
+![terraform-aws-infra](docs/terraform-aws-infra.JPG)
+
+
 ## Authors
 
 Module is maintained by [Karan Sharma](https://github.com/karan6190).
